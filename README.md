@@ -5,3 +5,4 @@ Atcoder 221に関するコード
 https://atcoder.jp/contests/abc221/tasks
 
 ## 参考記事
+https://kuroro.blog/atcoder/ehXdkumGxLjeDO6HyduI/
