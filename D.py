@@ -1,7 +1,7 @@
 # 標準入力を受け付ける。
 N = int(input())
 
-# 0~Nまでのログインしていたユーザーの数を格納する。
+# 0~N人ログインしていたユーザーの日数を格納する。
 ans = [0] * (N + 1)
 query = []
 for _ in range(N):
@@ -13,11 +13,11 @@ for _ in range(N):
     query.append((start, 1))
     query.append((end, -1))
 
-# 日付を基準にしてソートする。
+# ログイン開始日 or ログイン終了日を基準にしてソートする。
 query.sort()
 
 loginNum = 0
-# 以前のログイン日開始日 or ログイン終了日を格納する。
+# ひとつ前のログイン日開始日 or ログイン終了日を格納する。
 last = -1
 
 for (A, B) in query:
